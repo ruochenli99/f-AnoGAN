@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torch.utils.model_zoo import tqdm
-
+import os
 
 def test_anomaly_detection(opt, generator, discriminator, encoder,
                            dataloader, device, kappa=1.0):
