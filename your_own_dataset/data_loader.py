@@ -126,7 +126,7 @@ class TestDataset(Dataset):
         neg_mask = neg_mask.resize(self.target_size, Image.NEAREST)
         neg_mask = transforms.ToTensor()(neg_mask)
 
-        return img ,pos_mask, neg_mask
+        return img #,pos_mask, neg_mask
 
 
 def get_test_dataloader(split_dir: str, pathology: str, target_size: Tuple[int, int], batch_size: int):
