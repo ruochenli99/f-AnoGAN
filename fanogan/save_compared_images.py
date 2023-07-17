@@ -26,7 +26,7 @@ def save_compared_images(opt, generator, encoder, dataloader, device):
 
         save_image(compared_images.data,
                    f"results/images_diff/{opt.n_grid_lines*(i+1):06}.png",
-                   nrow=3, normalize=True)
+                   nrow=3, normalize=False)
 
         if opt.n_iters is not None and opt.n_iters == i:
             break
